@@ -1,5 +1,5 @@
 .body{
-  background-color: #0f172a;
+  background-color: black ;
   color: #f8fafc;
   transition: background-color 0.3s ease;
   margin : 5px;
@@ -288,7 +288,7 @@ body::before {
 .btn:active { transform: translateY(0); }
 
 .btn--primary {
-  background: var(--accent-gradient);
+  background: pink;
   color: var(--bg-primary);
   box-shadow: 0 4px 24px rgba(0, 210, 255, 0.30);
   border : 2px solid #6366f1;
@@ -299,7 +299,7 @@ body::before {
   border-color: #4f46e5;
 }
 .btn-secondary {
-    background-color: transparent;
+    background-color: red;
     color: #6366f1;
     border: 2px solid #6366f1; /* Outlined look */
 }
