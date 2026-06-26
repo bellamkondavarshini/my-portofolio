@@ -178,12 +178,14 @@ body::before {
 ─ Hero Section ────────────────────────────────────────── */
 .hero {
   min-height: 100vh;
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 4rem;
+  gap: 16px;
   padding-top: 6rem;
   position: relative;
+  margin : 20px;
+  
 }
 
 .hero__content {
@@ -289,10 +291,12 @@ body::before {
   background: var(--accent-gradient);
   color: var(--bg-primary);
   box-shadow: 0 4px 24px rgba(0, 210, 255, 0.30);
+  border : 2px solid #6366f1;
 }
 
 .btn--primary:hover {
   box-shadow: 0 8px 32px rgba(0, 210, 255, 0.50);
+  border-color: #4f46e5;
 }
 
 .btn--ghost {
