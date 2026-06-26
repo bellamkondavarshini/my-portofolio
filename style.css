@@ -298,6 +298,17 @@ body::before {
   box-shadow: 0 8px 32px rgba(0, 210, 255, 0.50);
   border-color: #4f46e5;
 }
+.btn-secondary {
+    background-color: transparent;
+    color: #6366f1;
+    border: 2px solid #6366f1; /* Outlined look */
+}
+
+/* Secondary Hover Effect */
+.btn-secondary:hover {
+    background-color: rgba(99, 102, 241, 0.1); /* Subtle background tint */
+    transform: translateY(-2px);
+}
 
 .btn--ghost {
   background: var(--card-glass);
