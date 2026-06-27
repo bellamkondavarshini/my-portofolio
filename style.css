@@ -1,5 +1,5 @@
-.body{
-  background-color: linear-gradient(135deg, #0F172A, #1E3A8A, #0F172A); ;
+body{
+  background: linear-gradient(135deg, #0F172A, #1E3A8A, #0F172A); ;
   color: #f8fafc;
   transition: background-color 0.3s ease;
   margin : 5px;
@@ -7,7 +7,7 @@
   font-family : 'Poppins', sans-serif;
 
 }
-.root {
+:root {
   --bg-primary:          #0B0F1A;
   --bg-secondary:        #0F1627;
   --bg-tertiary:         #111827;
@@ -53,12 +53,14 @@ html {
 }
 
 body {
-  background-color: var(--bg-primary);
+  background:  linear-gradient(135deg, #0F172A, #1E3A8A, #0F172A); 
   color: var(--text-high-contrast);
   font-family: var(--font-body);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  margin : 0px;
+  padding : 0px;
 }
 
 img, video { max-width: 100%; display: block; }
@@ -295,7 +297,7 @@ body::before {
 .btn:active { transform: translateY(0); }
 
 .btn--primary {
-  background: pink;
+  background-color: red;
   color: var(--bg-primary);
   box-shadow: 0 4px 24px rgba(0, 210, 255, 0.30);
   border : 2px solid #6366f1;
