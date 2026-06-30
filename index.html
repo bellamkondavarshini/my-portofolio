@@ -1,104 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Varshini | AI Developer</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Varshini | AI Developer & Technology Enthusiast</title>
+<meta name="description" content="Varshini — Full-Stack & AI Engineer. B.Tech student building production-grade AI and web applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HERO SECTION -->
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Varshini</h1>
-      <p class="tagline">AI Developer | Problem Solver | Future Tech Innovator</p>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn btn-primary" >Contact Me</a>
-        <a href="#projects" class="btn btn-secondary">View Projects</a>
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">VARSHINI<span class="dot">.</span></a>
+    <nav class="nav-links">
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta">Get in touch</a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <canvas id="synapse-canvas"></canvas>
+  <div class="hero-glow"></div>
+
+  <div class="hero-inner">
+    <p class="eyebrow">Full-Stack &amp; AI Engineer</p>
+    <h1 class="hero-title">
+      Varshini <span class="hero-sep">|</span><br>
+      <span class="gradient-text">AI Developer &amp; Technology Enthusiast</span>
+    </h1>
+    <p class="hero-tagline">
+      <span>AI Developer</span><span class="tagline-dot">•</span><span>Problem Solver</span><span class="tagline-dot">•</span><span>Future Tech Innovator</span>
+    </p>
+    <p class="hero-desc">
+      B.Tech student specializing in Artificial Intelligence and Full-Stack Engineering — architecting
+      end-to-end production applications with Python, React, and Firebase.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">Let's Build Something</a>
+      <a href="assets/Varshini_Resume.pdf" class="btn btn-glass" download>
+        <span>Download Full Resume</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true">
+    <span></span>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section" id="skills">
+  <div class="section-inner">
+    <p class="section-eyebrow">Capabilities</p>
+    <h2 class="section-title">Where intelligence meets interface</h2>
+
+    <div class="skill-clusters">
+      <article class="skill-node" data-progress="92">
+        <div class="skill-node-head">
+          <h3>AI &amp; Intelligent Systems</h3>
+          <span class="skill-percent">92%</span>
+        </div>
+        <p class="skill-desc">Machine learning pipelines, LLM integration, and prompt engineering for production-grade intelligent features.</p>
+        <div class="skill-bar"><div class="skill-bar-fill" style="--target:92%"></div></div>
+        <span class="skill-label">Data Engineering Proficiency</span>
+        <div class="skill-tags">
+          <span>Python</span><span>Machine Learning</span><span>Prompt Engineering</span>
+        </div>
+      </article>
+
+      <article class="skill-node" data-progress="88">
+        <div class="skill-node-head">
+          <h3>Full-Stack Web Development</h3>
+          <span class="skill-percent">88%</span>
+        </div>
+        <p class="skill-desc">React core lifecycle bindings, serverless state trees, and responsive Tailwind styling grids.</p>
+        <div class="skill-bar"><div class="skill-bar-fill" style="--target:88%"></div></div>
+        <span class="skill-label">Systems Deployment Ready</span>
+        <div class="skill-tags">
+          <span>React.js</span><span>Firebase</span><span>JavaScript (ES6+)</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="skill-pills">
+      <span>HTML5 / CSS3</span><span>Database Management</span><span>UI/UX Interface Design</span>
+      <span>Leadership</span><span>Communication</span><span>Teamwork</span>
+      <span>Problem Solving</span><span>Critical Thinking</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section" id="projects">
+  <div class="section-inner">
+    <p class="section-eyebrow">Core Engineering Projects</p>
+    <h2 class="section-title">Things I've shipped</h2>
+
+    <div class="project-list">
+
+      <article class="project-card">
+        <div class="project-card-top">
+          <h3>Nexara: AI-Driven Career Direction Engine</h3>
+          <span class="project-tag">Full-Stack Architecture</span>
+        </div>
+        <p class="project-stack">React.js · Tailwind CSS · Firebase · OpenAI API</p>
+        <ul class="project-points">
+          <li>Architected an end-to-end career execution platform with custom React hooks to handle complex application state gracefully.</li>
+          <li>Integrated secure Firebase Authentication alongside Firestore to manage simultaneous user sessions and real-time dashboard updates.</li>
+          <li>Designed a high-clarity interface around a deep visual matrix (#0B0F1A) for a focused, professional aesthetic.</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card-top">
+          <h3>Smart AI Interview Ecosystem</h3>
+          <span class="project-tag">Web &amp; AI Integration</span>
+        </div>
+        <p class="project-stack">Python · React.js · Tailwind CSS · Gemini API</p>
+        <ul class="project-points">
+          <li>Built an automated interview pipeline that reduces traditional screening friction with instant, structured evaluation.</li>
+          <li>Engineered a Python-based processing subsystem to parse behavioral inputs and produce precise diagnostic scoring.</li>
+          <li>Separated real-time video evaluation from performance diagnostics for a cleaner, faster interface.</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card-top">
+          <h3>Interactive Python Engine &amp; Content Suite</h3>
+          <span class="project-tag">Full-Stack Application</span>
+        </div>
+        <p class="project-stack">Python · Automated Prompt Workflows · Web UI</p>
+        <ul class="project-points">
+          <li>Created an interactive learning environment that demystifies Python syntax and data structures for early learners.</li>
+          <li>Used prompt engineering to automate text-to-visual instruction mapping, shortening onboarding time.</li>
+          <li>Built a responsive UI engineered to handle processing delays gracefully during intensive script execution.</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section class="section" id="education">
+  <div class="section-inner">
+    <p class="section-eyebrow">Education</p>
+    <h2 class="section-title">Foundations</h2>
+
+    <div class="edu-list">
+      <div class="edu-row">
+        <div class="edu-main">
+          <h3>B.Tech in Computer Science (AI/ML)</h3>
+          <p>Malla Reddy College of Engineering</p>
+        </div>
+        <span class="edu-score">8.0 / 10.0 CGPA</span>
+      </div>
+      <div class="edu-row">
+        <div class="edu-main">
+          <h3>Intermediate (Class XII)</h3>
+          <p>Sri Medha V Junior College, Hanamkonda</p>
+        </div>
+        <span class="edu-score">874 / 1000 Marks</span>
+      </div>
+      <div class="edu-row">
+        <div class="edu-main">
+          <h3>Schooling (Class X)</h3>
+          <p>PSR School of Excellence</p>
+        </div>
+        <span class="edu-score">9.5 / 10.0 GPA</span>
       </div>
     </div>
-  </section>
 
-  <!-- ABOUT SECTION -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Highly driven B.Tech student specializing in Artificial Intelligence and Full-Stack Engineering. Proven capability in architecting end-to-end production applications using Python, React, and Firebase. Seeking an engineering internship at an innovative ecosystem like Microsoft or Amazon.</p>
-  </section>
-
-  <!-- SKILLS SECTION -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">Artificial Intelligence</div>
-      <div class="skill-card">Machine Learning</div>
-      <div class="skill-card">Python</div>
-      <div class="skill-card">Web Development</div>
-      <div class="skill-card">HTML5 / CSS3</div>
-      <div class="skill-card">JavaScript (ES6+)</div>
-      <div class="skill-card">React.js</div>
-      <div class="skill-card">Firebase</div>
-      <div class="skill-card">Database Management</div>
-      <div class="skill-card">Prompt Engineering</div>
-      <div class="skill-card">UI/UX Design</div>
-      <div class="skill-card">Leadership</div>
+    <div class="achievements">
+      <div class="achv-card">
+        <h4>Growth Focus</h4>
+        <p>Deployed multiple functional web applications built around clean code architecture and low-overhead API endpoints.</p>
+      </div>
+      <div class="achv-card">
+        <h4>Hobbies &amp; Passions</h4>
+        <p>Reading deep systems architecture case studies, AI breakthroughs, and technology-focused entrepreneurial journals.</p>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- PROJECTS SECTION -->
-  <section id="projects">
-    <h2>Projects</h2>
+<!-- ===== CONTACT ===== -->
+<section class="section contact" id="contact">
+  <div class="section-inner">
+    <div class="contact-card">
+      <p class="section-eyebrow">Get in touch</p>
+      <h2 class="section-title">Let's build something game-changing</h2>
+      <p class="contact-sub">Send a message and I'll get back to you — recruiters and collaborators welcome.</p>
 
-    <div class="project-card">
-      <h3>Nexara: AI-Driven Career Direction Engine</h3>
-      <p class="tech">React.js · Tailwind CSS · Firebase · OpenAI API</p>
-      <p>Architected an end-to-end career execution platform with Firebase Authentication, Firestore real-time dashboard, and a futuristic dark UI interface.</p>
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+        </div>
+        <div class="field">
+          <label for="email">Work email</label>
+          <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+          <span class="field-hint" id="email-hint"></span>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell me about the role or project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send message</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="contact-links">
+        <a href="mailto:bellamkondavarshini0@gmail.com">bellamkondavarshini0@gmail.com</a>
+        <a href="tel:+919553464485">+91 95534 64485</a>
+        <a href="https://www.linkedin.com/in/bellamkonda-varshini-2a5310358" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="project-card">
-      <h3>Smart AI Interview Ecosystem</h3>
-      <p class="tech">Python · React.js · Tailwind CSS · Gemini API</p>
-      <p>Developed an automated interview pipeline with AI-backed behavioral input parsing and real-time video evaluation frames.</p>
-    </div>
+<footer class="footer">
+  <p>Designed with AI &amp; passion for innovation · Hyderabad, Telangana, India</p>
+  <p class="footer-year">© <span id="year"></span> Varshini. All rights reserved.</p>
+</footer>
 
-    <div class="project-card">
-      <h3>Interactive Python Engine & Content Suite</h3>
-      <p class="tech">Python · Prompt Engineering · Web UI</p>
-      <p>Created an interactive learning environment to demystify Python syntax with automated text-to-visual instruction mappings.</p>
-    </div>
-
-  </section>
-
-  <!-- EDUCATION SECTION -->
-  <section id="education">
-    <h2>Education</h2>
-    <div class="edu-card">
-      <h3>B.Tech in Computer Science (AI/ML)</h3>
-      <p>Malla Reddy College of Engineering — 8.0 / 10.0 CGPA</p>
-    </div>
-    <div class="edu-card">
-      <h3>Intermediate (Class XII)</h3>
-      <p>Sri Medha V Junior College, Hanamkonda — 874 / 1000</p>
-    </div>
-    <div class="edu-card">
-      <h3>Schooling (Class X)</h3>
-      <p>PSR School of Excellence — 9.5 / 10.0 GPA</p>
-    </div>
-  </section>
-
-  <!-- CONTACT SECTION -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:bellamkondavarshini0@gmail.com">bellamkondavarshini0@gmail.com</a></p>
-    <p>Phone: +91 9553464485</p>
-    <p>Location: Hyderabad, Telangana, India</p>
-    <p><a href="https://www.linkedin.com/in/bellamkonda-varshini-2a5310358" target="_blank">LinkedIn Profile</a></p>
-  </section>
-
-  <footer>
-    <p>Designed with AI & Passion for Innovation — Varshini © 2026</p>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
